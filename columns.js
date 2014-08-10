@@ -2,15 +2,19 @@
 var jade = require('jade');
 
 window.addEventListener('load', function () {
+	console.log(process.cwd());
 
 // For the columns, except grid-ins
-jade.render('/templates/sat-report.jade', function(err, html) {
+var html = jade.renderFile( process.cwd() + '/templates/answer-report.jade'
+	// , 
+	// function(err, html) {
 
-	if (err) {
-		console.error(err);
-	}
+	// 	if (err) {
+	// 		console.error(err);
+	// 	}
 
-	console.log(html);
-});
+	// 	console.log(html);
+	// }
+);
 
 });
