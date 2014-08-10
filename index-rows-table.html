@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Chyten SAT Student Answer Report, Student Copy</title>
+
+	<!-- *** CSS *** -->
+	<link rel="stylesheet" href="sat-answer-report-rows.css">
+
+	<!-- *** JS *** -->
+	<!-- TODO: phase out jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/thirdparty/jquery-1.11.0.min.js"><\/script>')</script>
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1>
+			Student Answer Report - 
+			<span class='test-num'>SAR-1 (BBB-2 Test #1)</span>
+		</h1>
+		<span call='recipient'>STUDENT COPY</span>
+
+	</header>
+
+	<form class='student-info'>
+
+		<label class='student-name student-data'>
+			Student: <input class='info' type='text' value='Some One'>
+		</label>
+
+		<label class='student-grad-year student-data'>
+			grad year: <input class='info' type='number' value='1969'>
+		</label>
+
+		<label class='student-start-date student-data'>
+			start date: <input class='info' type='date' value='date (needed?)'>
+		</label>
+
+		<label class='placeholder student-data'>
+			Thing: <input class='info' type='text' value='thing'>
+		</label>
+
+	</form>
+
+	<table class='test-data'>
+
+		<tr class='test-info'>
+
+			<!-- <td class='row-labels'>
+				Subject:
+				Section:
+				Time/Q:
+				Page:
+				Due:
+				Submitted:
+				HW / C / T:
+			</td> -->
+
+			<td class='reading'>
+				<table>
+					<thead>Reading</thead>
+
+					<tr class='test-sections'>
+
+						<td class='test-section'>
+							section <span class='section-num'>2</span>
+						</td>
+						<td class='test-section'>
+							section <span class='section-num'>5</span>
+						</td>
+						<td class='test-section'>
+							section <span class='section-num'>9</span>
+						</td>
+
+					</tr>
+
+					<tr class='section-info'>
+						<td class='test-section'>p. 390, 25 min.</td>
+						<td class='test-section'>p. 402, 25 min.</td>
+						<td class='test-section'>p. 425, 20 min.</td>
+					</tr>
+				</table>
+			</td>  <!-- end .reading -->
+
+			<td class='writing'>
+				<table>
+					<thead>Writing</thead>
+
+					<tr class='test-sections'>
+
+						<td class='test-section'>
+							section <span class='section-num'>6</span>
+						</td>
+						<td class='test-section'>
+							section <span class='section-num'>10</span>
+						</td>
+
+					</tr>
+
+					<tr class='section-info'>
+						<td class='test-section'>p. 407, 25 min.</td>
+						<td class='test-section'>p. 429, 10 min.</td>
+					</tr>
+				</table>
+			</td>  <!-- end .writing -->
+
+			<td class='math'>
+				<table>
+					<thead>Math</thead>
+
+					<tr class='test-sections'>
+
+						<td class='test-section'>
+							section <span class='section-num'>3</span>
+						</td>
+						<td class='test-section grid-in'>
+							section <span class='section-num'>7</span>
+						</td>
+						<td class='test-section'>
+							section <span class='section-num'>8</span>
+						</td>
+
+					</tr>
+
+					<tr class='section-info'>
+						<td class='test-section'>p. 396, 25 min.</td>
+						<td class='test-section'>p. 413, 25 min.</td>
+						<td class='test-section'>p. 419, 20 min.</td>
+					</tr>
+				</table>
+			</td>  <!-- end .math -->
+
+		</tr>  <!-- end .test-info -->
+
+		<tr class='answers'>
+
+			<tr class='reading labels'>
+				<table>
+						
+					<tr class='test-sections'>
+						<td class='reading'>
+							
+							<div class='question-number'>Q #</div>
+							<div class='correct'>Correct</div>
+							<div class='your-answer'>Your<br>Answer</div>
+
+						</td>
+
+						<td class='writing'>
+							
+							<div class='question-number'>Q #</div>
+							<div class='correct'>Correct</div>
+							<div class='your-answer'>Your<br>Answer</div>
+
+						</td>
+
+						<td class='math'>
+							
+							<div class='question-number'>Q #</div>
+							<div class='correct'>Correct</div>
+							<div class='your-answer'>Your<br>Answer</div>
+
+						</td>
+					</tr> <!-- end .sections -->
+
+				</table>
+			</td>  <!-- end .reading -->
+
+			<div class='writing'>
+
+				<div class='labels'></div>
+				
+			</div>  <!-- end .writing -->
+
+			<div class='math'>
+
+				<div class='labels'></div>
+				
+			</div>  <!-- end .math -->
+
+		</tr>
+
+		<tr class='totals'>
+
+			<div class='reading'>
+				
+			</div>
+
+			<div class='writing'>
+				
+			</div>
+
+			<div class='math'>
+				
+			</div>
+
+		</tr>
+
+	</table>
+
+</body>
+
+</html>

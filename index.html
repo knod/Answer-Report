@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Student Answer Report</title>
+
+	<!-- *** CSS *** -->
+	<link rel="stylesheet" href="answer-report-columns.css">
+
+	<!-- *** JS *** -->
+	<!-- TODO: phase out jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/thirdparty/jquery-1.11.0.min.js"><\/script>')</script>
+
+	<script src="bundle.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+	BLAH
+		<h1>
+			Student Answer Report - 
+			<span class='test-num'>Test Name</span>
+		</h1>
+
+		<select name="recipient">
+			<option value="tutor">TUTOR COPY</option> 
+			<option value="student" selected>STUDENT COPY</option>
+		</select>
+
+	</header>
+
+	<form class='student-info'>
+
+		<label class='student-name student-data'>
+			Student: <input class='info' type='text' value='Some One'>
+		</label>
+
+		<label class='student-grad-year student-data'>
+			grad year: <input class='info' type='text' value='1969'>
+		</label>
+
+		<label class='student-start-date student-data'>
+			start date: <input class='info' type='text' value='date (needed?)'>
+		</label>
+
+		<label class='placeholder student-data'>
+			Thing: <input class='info' type='text' value='thing'>
+		</label>
+
+	</form>
+
+	<table class='test-data'>
+
+		<td class='subject'>
+			
+			<table class='reading'>
+				<th colspan='3'>Reading</th>
+
+				<tr>
+
+					<td class='test-sec'>
+						<table class='reading-sec-first'>
+
+							<tr class='section-number'>
+								<th colspan='3'>section 2</th>
+							</tr>
+
+							<tr class='section-info'>
+								<td colspan='3'>p. #, # min.</td>
+							</tr>
+
+							<tr>
+
+								<th class='flipped q-number'>Q #</th>
+								<th class='flipped actual-answer'>Q #</th>
+								<th class='flipped student-answer'>Q #</th>
+
+							</tr>
+
+							<tr>
+
+								<td>1</td>
+								<td class="text-spacer">D</td>
+								<td class="text-spacer">DD</td>
+
+							</tr>
+
+
+						</table>
+					</td>
+
+					<td class='test-sec'>
+						<table class='reading-sec-first'>
+
+							<tr class='section-number'>
+								<th>section 2</th>
+							</tr>
+
+							<tr class='section-info'>
+								<td>p. #, # min.</td>
+							</tr>
+
+
+						</table>
+					</td>
+
+					<td class='test-sec'>
+						<table class='reading-sec-first'>
+
+							<tr class='section-number'>
+								<th>section 2</th>
+							</tr>
+
+							<tr class='section-info'>
+								<td>p. #, # min.</td>
+							</tr>
+
+
+						</table>
+					</td>
+
+				</tr>
+
+			</table>  <!-- end .reading -->
+
+		</td>
+
+		<td class='subject'>
+			
+			<table class='subject-name'>
+				<tr>
+					<td>Subject</td>
+				</tr>
+			</table>  <!-- end .reading -->
+
+		</td>
+
+		<td class='subject'>
+			
+			<table class='subject-name'>
+				<tr>
+					<td>Subject</td>
+				</tr>
+			</table>  <!-- end .reading -->
+
+		</td>
+
+	</table>  <!-- end .test-data -->
+
+</body>
+
+</html>

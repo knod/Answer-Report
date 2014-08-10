@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Chyten SAT Student Answer Report, Student Copy</title>
+
+	<!-- *** CSS *** -->
+	<link rel="stylesheet" href="sat-answer-report-rows.css">
+
+	<!-- *** JS *** -->
+	<!-- TODO: phase out jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/thirdparty/jquery-1.11.0.min.js"><\/script>')</script>
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1>
+			Student Answer Report - 
+			<span class='test-num'>SAR-1 (BBB-2 Test #1)</span>
+		</h1>
+		<span call='recipient'>STUDENT COPY</span>
+
+	</header>
+
+	<form class='student-info'>
+
+		<label class='student-name student-data'>
+			Student: <input class='info' type='text' value='Some One'>
+		</label>
+
+		<label class='student-grad-year student-data'>
+			grad year: <input class='info' type='number' value='1969'>
+		</label>
+
+		<label class='student-start-date student-data'>
+			start date: <input class='info' type='date' value='date (needed?)'>
+		</label>
+
+		<label class='placeholder student-data'>
+			Thing: <input class='info' type='text' value='thing'>
+		</label>
+
+	</form>
+
+	<section class='test-info'>
+
+		<div class='row-labels'>
+			<!-- Subject:
+			Section:
+			Time/Q:
+			Page:
+			Due:
+			Submitted:
+			HW / C / T: -->
+		</div>
+
+		<div class='reading'>
+
+			<h1>Reading</h1>
+
+			<div class='test-sections'>
+				<div class='test-section'>sec 2, 25 min.</div>
+				<div class='test-section'>sec 5, 25 min.</div>
+				<div class='test-section'>sec 9, 20 min.</div>
+			</div>
+
+			<div class='section-info'>
+				<div class='test-section'>p. 390</div>
+				<div class='test-section'>p. 402</div>
+				<div class='test-section'>p. 425</div>
+			</div>
+
+		</div>
+
+		<div class='writing'>
+
+			<h1>Writing</h1>
+
+			<div class='test-sections'>
+				<div class='test-section'>sec 6, 25 min.</div>
+				<div class='test-section'>sec 10, 10 min.</div>
+			</div>
+
+			<div class='section-info'>
+				<div class='test-section'>p. 407</div>
+				<div class='test-section'>p. 429</div>
+			</div>
+
+		</div>
+
+		<div class='math'>
+
+			<h1>Math</h1>
+
+			<div class='test-sections'>
+				<div class='test-section'>sec 3, 25 min.</div>
+				<div class='test-section grid-in'>sec 7, 25 min.</div>
+				<div class='test-section'>sec 8, 20 min.</div>
+			</div>
+
+			<div class='section-info'>
+				<div class='test-section'>p. 396</div>
+				<div class='test-section'>p. 413</div>
+				<div class='test-section'>p. 419</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class='answers'>
+
+		<div class='reading'>
+
+			<div class='labels'>
+				
+				<div class='test-sections'>
+					<div class='test-section'>
+						
+						<div class='question-number'>Q #</div>
+						<div class='correct'>Correct</div>
+						<div class='your-answer'>Your<br>Answer</div>
+
+					</div>
+
+					<div class='test-section'>
+						
+						<div class='question-number'>Q #</div>
+						<div class='correct'>Correct</div>
+						<div class='your-answer'>Your<br>Answer</div>
+
+					</div>
+
+					<div class='test-section'>
+						
+						<div class='question-number'>Q #</div>
+						<div class='correct'>Correct</div>
+						<div class='your-answer'>Your<br>Answer</div>
+
+					</div>
+				</div> <!-- end .sections -->
+
+			</div> <!-- end .labels -->
+
+		</div>
+
+		<div class='writing'>
+
+			<div class='labels'></div>
+			
+		</div>
+
+		<div class='math'>
+
+			<div class='labels'></div>
+			
+		</div>
+
+	</section>
+
+	<section class='totals'>
+
+		<div class='reading'>
+			
+		</div>
+
+		<div class='writing'>
+			
+		</div>
+
+		<div class='math'>
+			
+		</div>
+
+	</section>
+
+</body>
+
+</html>

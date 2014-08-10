@@ -1,0 +1,23 @@
+{
+  "name": "sattestprep",
+  "version": "0.0.0",
+  "description": "",
+  "main": "columns.js",
+  "devDependencies": {
+    "beefy": "~1.1.0",
+    "browserify": "~3.46.0"
+  },
+  "scripts": {
+    "start": "beefy columns.js:bundle.js --live --open"
+  },
+  "author": "",
+  "dependencies": {
+    "jade": "1.4.0"
+  },
+  "jadeConfig": {
+    "filename":"notsure",
+    "pretty":"true",
+    "debug":"true",
+    "compileDebug":"true"
+  }
+}

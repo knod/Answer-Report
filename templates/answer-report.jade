@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Student Answer Report
+
+    link(rel='stylesheet', href='sat-answer-report-columns.css')
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script
+      window.jQuery || document.write('<script src="js/thirdparty/jquery-1.11.0.min.js"><\\/script>')
+    script(src='bundle.js')
+
+  body
+    header
+      h1
+        | Student Answer Report -
+        span.test-num Test Name
+      select(name='recipient')
+        option(value='tutor') TUTOR COPY
+        option(value='student', selected='selected') STUDENT COPY
+    form.student-info
+      label.student-name.student-data
+        | Student:
+        input.info(type='text', value='Some One')
+      label.student-grad-year.student-data
+        | grad year:
+        input.info(type='text', value='1969')
+      label.student-start-date.student-data
+        | start date:
+        input.info(type='text', value='date (needed?)')
+      label.placeholder.student-data
+        | Thing:
+        input.info(type='text', value='thing')
+    table.test-data
+      td.subject
+        table.reading
+          th(colspan='3') Reading
+          tr
+            td.test-sec
+              table.reading-sec-first
+                tr.section-number
+                  th(colspan='3') section 2
+                tr.section-info
+                  td(colspan='3') p. #, # min.
+                tr
+                  th.flipped.q-number Q #
+                  th.flipped.actual-answer X
+                  th.flipped.student-answer Y
+                tr
+                  td 1
+                  td.text-spacer D
+                  td.text-spacer DD
+            td.test-sec
+              table.reading-sec-first
+                tr.section-number
+                  th section 2
+                tr.section-info
+                  td p. #, # min.
+            td.test-sec
+              table.reading-sec-first
+                tr.section-number
+                  th section 2
+                tr.section-info
+                  td p. #, # min.
+      td.subject
+        table.subject-name
+          tr
+            td Subject
+      td.subject
+        table.subject-name
+          tr
+            td Subject

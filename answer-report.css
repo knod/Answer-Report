@@ -1,0 +1,130 @@
+/* Styles for every student answer report */
+
+/* -------------------
+	Structure
+   ------------------- */
+body, div, table, td, tr, col, header, section, footer,
+span,label, input,  a, strong, em, h1, h2, h3, h4 {
+	box-sizing: border-box;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+html {width: 100%;}
+
+body {
+	width: 100%;
+	padding: .3rem;
+}
+
+header {
+	text-align: center;
+	padding: .2rem;
+}
+
+section {
+	width: 100%;
+	margin: .2rem 0;
+	padding-left: .1rem;
+	clear: both;
+}
+
+input {
+	height: 1.2rem;
+}
+
+.student-info {
+	height: 1.5rem;
+	margin-bottom: .2rem;
+}
+
+.student-data {
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+/* Each individual widths */
+/* Margins + widths must add up to 100% */
+.student-name { width: 34%; margin-right: 2%; }
+.student-grad-year { width: 13%; margin-right: 3%;  }
+.student-start-date { width: 25%; margin-right: 3%;  }
+.placeholder { width: 20%; }
+
+/* Widths based on visual check */
+.student-name input { width: 74%; }
+.student-grad-year input { width: 42%; }
+.student-start-date input { width: 65%; }
+.placeholder input { width: 65%; }
+
+.student-data:last-child {
+	margin: 0;
+	/* Will always stay to the right */
+	float: right;
+}
+
+input {
+	width: 65%;
+	text-align: center;
+}
+
+.student-info input { float: right; }
+
+table {
+	width: 100%;
+	padding: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.reading { width: 37.5%; }
+.writing { width: 25%; }
+.math { width: 37.5%; }
+
+/* -------------------
+	Function
+   ------------------- */
+.spacer {
+}
+
+/* -------------------
+	Skin
+   ------------------- */
+
+h1 {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.student-name, .student-start-date {
+	/* Make up for double border spacing */
+	margin-top: -.2rem;
+	border: black double .2rem;
+}
+
+input {
+	font-family: inherit;
+	border: none;
+	background-color: rgb(235, 235, 235);
+}
+
+input:hover, input:focus {
+	background-color: rgb(219, 236, 234);
+}
+
+.test-data, td, .placeholder {
+	border: black solid .1rem;
+}
+
+table table td:first-child {
+	border-left: none;
+}
+
+table table td:last-child {
+	border-right: none;
+}
+
+.section-num {
+	font-weight: bold;
+}
