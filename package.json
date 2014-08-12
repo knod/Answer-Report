@@ -15,7 +15,6 @@
     "jade": "1.4.0"
   },
   "jadeConfig": {
-    "filename":"notsure",
     "pretty":"true",
     "debug":"true",
     "compileDebug":"true"
